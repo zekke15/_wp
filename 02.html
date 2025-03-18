@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>學生資料表單</title>
+</head>
+<body>
+    <h2>學生資料填寫表單</h2>
+    <form action="#" method="post">
+        <div>
+            <label for="name">請輸入姓名：</label>
+            <input type="text" id="name" name="name" required><br><br>
+        </div>
+        
+        <div>
+            <label for="idNumber">身分證字號：</label>
+            <input type="text" id="idNumber" name="idNumber" required><br><br>
+        </div>
+
+        <div>
+            <label for="studentID">學號：</label>
+            <input type="text" id="studentID" name="studentID" required><br><br>
+        </div>
+
+        <div>
+            <label for="email">電子郵件：</label>
+            <input type="email" id="email" name="email" required><br><br>
+        </div>
+        
+        <div>
+            <label for="birthDate">生日：</label>
+            <input type="date" id="birthDate" name="birthDate" required><br><br>
+        </div>
+
+        <div>
+            <label>選擇年級：</label><br>
+            <input type="radio" id="grade1" name="grade" value="一年級">
+            <label for="grade1">一年級</label><br>
+            <input type="radio" id="grade2" name="grade" value="二年級">
+            <label for="grade2">二年級</label><br>
+            <input type="radio" id="grade3" name="grade" value="三年級">
+            <label for="grade3">三年級</label><br>
+            <input type="radio" id="grade4" name="grade" value="四年級">
+            <label for="grade4">四年級</label><br><br>
+        </div>
+
+        <div>
+            <button type="submit">提交資料</button>
+        </div>
+    </form>
+</body>
+</html>
