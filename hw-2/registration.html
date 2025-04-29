@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NQU Science & Engineering - Student Registration</title>
+</head>
+<body>
+    <h2>Student Registration Form - College of Science & Engineering</h2>
+
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName"><br><br>
+
+            <label for="dob">Birthdate:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label for="idnum">Student ID:</label>
+            <input type="text" id="idnum" name="idnum"><br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Info</legend>
+
+            <label>Year Level:</label>
+            <select name="yearLevel">
+                <option value="1">Year 1</option>
+                <option value="2">Year 2</option>
+                <option value="3">Year 3</option>
+                <option value="4">Year 4</option>
+            </select><br><br>
+
+            <label for="major">Department:</label>
+            <select id="major" name="major">
+                <option value="cs">Computer Science</option>
+                <option value="ee">Electronic Engineering</option>
+                <option value="ce">Civil Engineering</option>
+                <option value="fs">Food Science</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Details</legend>
+
+            <label for="addr">Current Address:</label><br>
+            <textarea id="addr" name="addr" rows="3" cols="40"></textarea><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="extra">Upload Additional Info:</label>
+            <input type="file" id="extra" name="extra"><br><br>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Register" style="background-color: #4CAF50; color: white;">
+        <input type="reset" value="Clear Form" style="background-color: #f44336; color: white;">
+    </form>
+</body>
+</html>
