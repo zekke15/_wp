@@ -55,7 +55,7 @@ export function layout(title, content) {
     `;
   }
   
-  // 顯示貼文列表，並加入貼文建立時間
+  
   export function list(posts) {
     let list = [];
     for (let post of posts) {
@@ -79,7 +79,7 @@ export function layout(title, content) {
     return layout('Posts', content);
   }
   
-  // 顯示新增貼文的表單
+  
   export function newPost() {
     return layout('New Post', `
     <h1>New Post</h1>
@@ -92,7 +92,7 @@ export function layout(title, content) {
     `);
   }
   
-  // 顯示特定貼文的內容，並加入貼文建立時間
+
   export function show(post) {
     const formattedDate = new Date(post.created_at).toLocaleString();
     return layout(post.title, `
